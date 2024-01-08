@@ -1,5 +1,7 @@
 # Roundcube Plugin: `add_buttons` (add buttons and links to Roundcube menus / navigation bars)
 
+**WARNING: NOT FOR PRODUCTION USE YET, HIGHLY EXPERIMENTAL**
+
 A [Roundcube](https://roundcube.net/) [plugin](https://plugins.roundcube.net/) which allows you to add individual, custom links or buttons to different menus.
 
 
