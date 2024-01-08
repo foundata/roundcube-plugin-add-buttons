@@ -3,3 +3,16 @@
     width: auto !important;
     margin: -3rem 0 0 0 !important;
 }
+
+
+.popover .add_buttons svg {
+    margin-top: -0.5rem 7px 0 0 !important;
+}
+
+.popover .add_buttons svg::before {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
