@@ -1,9 +1,11 @@
-.add_buttons {
+.add_buttons svg {
+    height: 1.75rem !important;
+    width: auto !important;
+    margin: -3rem 0 0 0 !important;
     padding: 0 !important;
-    position: relative;
-    top: -1rem;
 }
 
-.add_buttons i {
+.add_buttons span {
     display: block;
+    margin: -1.1rem 0 0 0 !important;
 }

@@ -39,7 +39,7 @@ class add_buttons extends rcube_plugin
                 $button_item['container'] = 'taskbar';
             }
             if (empty($button_item['onclick'])) {
-                $button_item['onclick'] = ''; // emtpy string will prevent adding the attribute
+                $button_item['onclick'] = ''; // empty string will prevent adding the attribute
             }
 
             // check data
@@ -57,7 +57,7 @@ class add_buttons extends rcube_plugin
 
             // userdefined inline SVG icon
             if (isset($button_item['icon_inline']) && $button_item['icon_inline'] !== '') {
-                // FIXME check for SVG
+                // FIXME check for SVG or base64 image like string
                 $content = $button_item['icon_inline'];
 
             /* FIXME To be implemented
@@ -88,6 +88,9 @@ class add_buttons extends rcube_plugin
                 }
                 $content = '<i class="' . $button_item['icon_fontawesome_v6'] . '"></i>';
             }
+
+            // Add label
+            $content .= '<span class="inner">' . htmlspecialchars($button_item['label'], ENT_NOQUOTES | ENT_SUBSTITUTE, 'UTF-8') . '</span>'; // FIXME research encoding function to be used. something like https://github.com/roundcube/roundcubemail/blob/master/program/lib/Roundcube/html.php#L390 for content? RCUBE_CHARSET instead of UTF-8?
 
             // https://docs.roundcube.net/doc/phpdoc/classes/rcube_plugin.html#method_add_button
             $this->add_button(
