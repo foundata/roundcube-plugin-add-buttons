@@ -7,7 +7,7 @@
  * as needed.
  *
  * @license SPDX-License-Identifier: GPL-3.0-or-later
- * @copyright SPDX-FileCopyrightText: foundata GmbH <https://foundata.com>
+ * @copyright SPDX-FileCopyrightText: foundata GmbH (https://foundata.com)
  */
 
 
